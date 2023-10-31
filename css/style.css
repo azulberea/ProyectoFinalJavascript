@@ -1,0 +1,221 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@100&display=swap");
+header {
+  height: 80vh;
+  width: 99vw;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../public/img/barra.jpg);
+  background-size: cover;
+  background-position: 50%;
+}
+header p {
+  text-align: center;
+  margin: 3em 2em;
+  font-weight: bold;
+  font-size: 2rem;
+  line-height: 1.5;
+  color: rgba(255, 255, 255, 0.5803921569);
+}
+header > div {
+  display: flex;
+  color: white;
+  font-size: 1rem;
+  padding: 0.5em;
+}
+header > div h1 {
+  font-size: 3.5rem;
+  margin-right: auto;
+}
+header > div a {
+  margin: 1%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Work Sans", sans-serif;
+}
+* a {
+  text-decoration: none;
+  color: white;
+}
+* a:hover {
+  color: #383737;
+  transition: 0.5s;
+}
+
+.card {
+  width: 190px;
+  height: 254px;
+  border-radius: 20px;
+  background-size: cover;
+  position: relative;
+  padding: 1.8rem;
+  border: 2px solid #c3c6ce;
+  transition: 0.5s ease-out;
+  overflow: visible;
+}
+.card:hover {
+  border-color: #181717;
+  box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.25);
+  background-position: 50%;
+}
+.card:hover button {
+  transform: translate(-50%, 50%);
+  opacity: 1;
+}
+.card div {
+  color: rgb(211, 207, 207);
+  height: 100%;
+  gap: 0.5em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.card div > p {
+  font-size: 1.5em;
+  font-weight: bold;
+  text-align: center;
+}
+.card div > p:nth-child(2) {
+  color: rgb(153, 153, 153);
+  font-size: 2em;
+}
+.card button {
+  transform: translate(-50%, 125%);
+  width: 60%;
+  border-radius: 1rem;
+  border: none;
+  background-color: rgb(65, 61, 61);
+  color: #fff;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  opacity: 0;
+  transition: 0.3s ease-out;
+}
+
+.barspoonCard {
+  background-image: url(../public/img/barspoonImg.jpg);
+}
+
+.cocteleraCard {
+  background-image: url(../public/img/cocteleraImg.jpg);
+}
+.cocteleraCard .card-details {
+  color: black;
+}
+
+.coladorCard {
+  background-image: url(../public/img/coladorOrugaImg.jpg);
+}
+.coladorCard .card-details {
+  color: black;
+}
+
+.jiggerCard {
+  background-image: url(../public/img/jiggerImg.jpg);
+}
+
+body {
+  background-color: black;
+  color: white;
+  overflow-x: hidden;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+main > div {
+  display: flex;
+  flex-flow: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.containerColumn {
+  display: flex;
+  flex-direction: row;
+  margin: 10px;
+  width: 30%;
+  justify-content: space-around;
+}
+.containerColumn img {
+  width: 30%;
+  object-fit: cover;
+}
+
+h2 {
+  text-align: center;
+  margin: 2em 1em;
+}
+
+.utensilios {
+  margin-top: 2em;
+}
+
+.carrito {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.carrito h2 {
+  margin: 2em 1em;
+}
+.carrito p {
+  margin: 2em 1em;
+}
+
+.carritoCard {
+  width: 300px;
+  height: 100px;
+  border-radius: 20px;
+  position: relative;
+  padding: 1rem;
+  border: 2px solid #c3c6ce;
+  transition: 0.5s ease-out;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.carritoCard img {
+  width: 25%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 5px;
+}
+.carritoCard:hover {
+  border-color: #181717;
+  box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.25);
+  background-position: 50%;
+}
+.carritoCard:hover button {
+  transform: translate(-50%, 50%);
+  opacity: 1;
+}
+.carritoCard button {
+  transform: translate(-50%, 125%);
+  width: 20%;
+  border-radius: 1rem;
+  border: none;
+  background-color: rgb(65, 61, 61);
+  color: #fff;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  position: absolute;
+  left: 105%;
+  bottom: 50%;
+  opacity: 0;
+  transition: 0.3s ease-out;
+}
+.carritoCard div {
+  width: 50% p;
+  width-margin: 0;
+  width-padding: 0;
+}
+
+/*# sourceMappingURL=style.css.map */

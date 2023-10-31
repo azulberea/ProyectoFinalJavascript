@@ -1,0 +1,28 @@
+header{        
+    height: 80vh;
+    width: 99vw;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../public/img/barra.jpg);
+    background-size: cover;
+    background-position: 50%;
+    p{
+        text-align: center;
+        margin: 3em 2em;
+        font-weight: bold;
+        font-size: 2rem;
+        line-height: 1.5;
+        color: #ffffff94;
+    }
+    >div{
+        display: flex;
+        color: white;
+        font-size: 1rem;
+        padding: 0.5em;
+        h1{
+            font-size: 3.5rem;
+            margin-right: auto;
+        }
+        a{
+            margin: 1%;
+        }
+    }
+}

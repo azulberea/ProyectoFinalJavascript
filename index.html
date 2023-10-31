@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div>
+            <h1 class="logo"><a href="./index.html" >BOOZED</a></h1>
+            <a href="#">inicio</a>
+            <a href="#">nosotros</a>
+            <a href="#">servicios</a>
+            <a href="#" class="productos">productos</a>
+            <a href="#">recetario</a>        
+        </div>
+        <!-- <div class="hoverProductos">
+            <a>utensilios</a>
+            <a>cristaleria</a>
+            <a>bebidas</a>
+        </div> -->
+        <p>En el corazón de la coctelería refinada, te damos la bienvenida a un lugar donde los sabores se mezclan con la elegancia. Explora nuestras barras, bebidas selectas y recetas exclusivas de cócteles.</p>
+    </header>
+    <main>
+        <h2>NUESTROS PRODUCTOS</h2>
+        <div class="utensilios">
+            <div class="card cocteleraCard">
+                <div class="card-details">
+                    <p class="card-title">COCTELERA</p>
+                    <p class="card-price">$6600</p>
+                </div>
+                <button class="card-button"><box-icon name='cart-add' color='#ffffff' ></box-icon></button>
+            </div>
+            <div class="card barspoonCard">
+                <div class="card-details">
+                    <p class="card-title">BARSPOON</p>
+                    <p class="card-price">$4500</p>
+                </div>
+                <button class="card-button"><box-icon name='cart-add' color='#ffffff' ></box-icon></button>
+            </div>
+            <div class="card coladorCard">
+                <div class="card-details">
+                    <p class="card-title">COLADOR ORUGA</p>
+                    <p class="card-price">$3700</p>
+                </div>
+                <button class="card-button"><box-icon name='cart-add' color='#ffffff' ></box-icon></button>
+            </div>
+            <div class="card jiggerCard">
+                <div class="card-details">
+                    <p class="card-title">JIGGER</p>
+                    <p class="card-price">$6400</p>
+                </div>
+                <button class="card-button"><box-icon name='cart-add' color='#ffffff' ></box-icon></button>
+            </div>
+        <!-- <div class="cristaleria">
+            <div>
+                <h3>Vaso Old Fashioned</h3>
+                <p>$1590</p>
+                <button class="botonCarrito" id="addVasoOldFashioned">Agregar al carrito</button>
+            </div>
+            <div>
+                <h3>Vaso Highball</h3>
+                <p>$1350</p>
+                <button class="botonCarrito" id="addVasoHighball">Agregar al carrito</button>
+            </div>
+            <div>
+                <h3>Copa Hurricane</h3>
+                <p>$2450</p>
+                <button class="botonCarrito" id="addCopaHurricane">Agregar al carrito</button>
+            </div>
+            <div>
+                <h3>Copa Cocktail</h3>
+                <p>$2750</p>
+                <button class="botonCarrito" id="addCopaCocktail">Agregar al carrito</button>
+            </div>
+        </div>
+        <div class="bebidasAlcoholicas">
+            <div>
+                <h3>Gin Tanqueray 750ml</h3>
+                <p>$9790</p>
+                <button class="botonCarrito" id="addGinTanqueray">Agregar al carrito</button>
+            </div>
+            <div>
+                <h3>Vodka Wyborowa 750ml</h3>
+                <p>$3900</p>
+                <button class="botonCarrito" id="addVodkaWyborowa">Agregar al carrito</button>
+            </div>
+            <div>
+                <h3>Fernet Branca 750ml</h3>
+                <p>$4040</p>
+                <button class="botonCarrito" id="addFernetBranca">Agregar al carrito</button>
+            </div>
+            <div>
+                <h3>Ron Havana Club añejo 3 años 750ml</h3>
+                <p>$5800</p>
+                <button class="botonCarrito" id="addRonHavanaClub">Agregar al carrito</button>
+            </div>
+        </div>
+        <div class="bebidasNoAlcoholicas">
+            <div>
+                <h3>Agua Tónica 1,5l</h3>
+                <p>$750</p>
+                <button class="botonCarrito" id="addAguaTonica">Agregar al carrito</button>
+            </div>
+            <div>
+                <h3>Redbull 250ml pack 4u.</h3>
+                <p>$3100</p>
+                <button class="botonCarrito" id="addRedbullPack">Agregar al carrito</button>
+            </div>
+            <div>
+                <h3>Coca-Cola 2,25l</h3>
+                <p>$1050</p>
+                <button class="botonCarrito" id="addCocaCola">Agregar al carrito</button>
+            </div>
+            <div>
+                <h3>Schweppes pomelo</h3>
+                <p>$5800</p>
+                <button class="botonCarrito" id="addSchweppesPomelo">Agregar al carrito</button>
+            </div> 
+        </div>  -->
+    </main>
+    <section class="carrito" id="carrito">
+        <div>
+            <h2>Carrito</h2>
+            <p id="pCarritoVacio">tu carrito de compras esta vacio</p>
+        </div>
+        <div id="elementosCarrito">
+            <div class="carritoCard">
+                <img src="./public/img/barspoonImg.jpg">
+                <p>BARSPOON</p>
+                <div class="cantidad">
+                    <p>1</p>
+                </div>
+                <button class="card-button"><box-icon name='trash-alt' type='solid' ></box-icon></button>
+            </div>
+            <div class="carritoCard">
+                <img src="./public/img/cocteleraImg.jpg">
+                <p>COCTELERA</p>
+                <div class="cantidad">
+                    <p>1</p>
+                </div>
+                <button class="card-button"><box-icon name='trash-alt' type='solid' ></box-icon></button>
+            </div>
+            <div class="carritoCard">
+                <img src="./public/img/coladorOrugaImg.jpg">
+                <p>COLADOR ORUGA</p>
+                <div class="cantidad">
+                    <p>1</p>
+                </div>
+                <button class="card-button"><box-icon name='trash-alt' type='solid' ></box-icon></button>
+            </div>
+            <div class="carritoCard">
+                <img src="./public/img/jiggerImg.jpg">
+                <p>JIGGER</p>
+                <div class="cantidad">
+                    <p>1</p>
+                </div>
+                <button class="card-button"><box-icon name='trash-alt' type='solid' ></box-icon></button>
+            </div>
+        </div>
+    </section>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>

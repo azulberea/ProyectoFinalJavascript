@@ -1,0 +1,71 @@
+.card{
+    width: 190px;
+    height: 254px;
+    border-radius: 20px;
+    background-size: cover;
+    position: relative;
+    padding: 1.8rem;
+    border: 2px solid #c3c6ce;
+    transition: 0.5s ease-out;
+    overflow: visible;
+    &:hover{
+        border-color: #181717;
+        box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.25);
+        background-position: 50%;
+        button{
+            transform: translate(-50%, 50%);
+            opacity: 1;
+        }
+    }
+    div{
+        color: rgb(211, 207, 207);
+        height: 100%;
+        gap: .5em;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;   
+        >p{
+            font-size: 1.5em;
+            font-weight: bold;
+            text-align: center;
+            &:nth-child(2){
+                color: rgb(153, 153, 153);
+                font-size: 2em;
+            }
+        }
+    }
+    button{
+        transform: translate(-50%, 125%);
+        width: 60%;
+        border-radius: 1rem;
+        border: none;
+        background-color: rgb(65, 61, 61);
+        color: #fff;
+        font-size: 1rem;
+        padding: .5rem 1rem;
+        position: absolute;
+        left: 50%;
+        bottom: 0;
+        opacity: 0;
+        transition: 0.3s ease-out;
+    }
+}
+.barspoonCard{  
+    background-image: url(../public/img/barspoonImg.jpg);
+}
+.cocteleraCard{
+    background-image: url(../public/img/cocteleraImg.jpg) ;
+    .card-details{
+        color: black; 
+    }    
+}
+.coladorCard{    
+    background-image: url(../public/img/coladorOrugaImg.jpg);
+    .card-details{
+        color: black;
+    }
+}
+.jiggerCard{
+    background-image: url(../public/img/jiggerImg.jpg);
+}
