@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
     <title>Document</title>
 </head>
@@ -10,7 +11,7 @@
     <header>
         <div>
             <h1 class="logo"><a href="./index.html" >BOOZED</a></h1>
-            <a href="#">inicio</a>
+            <a href="#" class="fadein">inicio</a>
             <a href="#">nosotros</a>
             <a href="#">servicios</a>
             <a href="#" class="productos">productos</a>
@@ -24,8 +25,8 @@
         <p>En el corazón de la coctelería refinada, te damos la bienvenida a un lugar donde los sabores se mezclan con la elegancia. Explora nuestras barras, bebidas selectas y recetas exclusivas de cócteles.</p>
     </header>
     <main>
-        <h2>NUESTROS PRODUCTOS</h2>
-        <div class="utensilios">
+        <h2 data-aos="fade-up">NUESTROS PRODUCTOS</h2>
+        <div data-aos="fade-up" class="utensilios">
             <div class="card cocteleraCard">
                 <div class="card-details">
                     <p class="card-title">COCTELERA</p>
@@ -162,6 +163,7 @@
         </div>
     </section>
     <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="main.js"></script>
 </body>
 </html>

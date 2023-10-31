@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@100&display=swap");
 header {
-  height: 80vh;
+  height: 90vh;
   width: 99vw;
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../public/img/barra.jpg);
   background-size: cover;
