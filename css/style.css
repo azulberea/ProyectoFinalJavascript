@@ -78,7 +78,6 @@ header > div a {
   text-align: center;
 }
 .card div > p:nth-child(2) {
-  color: rgb(153, 153, 153);
   font-size: 2em;
 }
 .card button {
@@ -97,26 +96,76 @@ header > div a {
   transition: 0.3s ease-out;
 }
 
-.barspoonCard {
-  background-image: url(../public/img/barspoonImg.jpg);
-}
-
-.cocteleraCard {
+.coctelera-card {
   background-image: url(../public/img/cocteleraImg.jpg);
 }
-.cocteleraCard .card-details {
+.coctelera-card .card-title {
   color: black;
 }
+.coctelera-card .card-price {
+  color: rgb(153, 153, 153);
+}
 
-.coladorCard {
+.barspoon-card {
+  background-image: url(../public/img/barspoonImg.jpg);
+}
+.barspoon-card .card-price {
+  color: rgb(153, 153, 153);
+}
+
+.colador-card {
   background-image: url(../public/img/coladorOrugaImg.jpg);
 }
-.coladorCard .card-details {
+.colador-card .card-title {
   color: black;
 }
+.colador-card .card-price {
+  color: rgb(153, 153, 153);
+}
 
-.jiggerCard {
+.jigger-card {
   background-image: url(../public/img/jiggerImg.jpg);
+}
+.jigger-card .card-price {
+  color: rgb(153, 153, 153);
+}
+
+.vaso-old-fashioned-card {
+  background-image: url(../public/img/vasoOldFashionedImg.jpg);
+}
+
+.vaso-highball-card {
+  background-image: url(../public/img/vasoHighballimg.jpg);
+}
+
+.copa-hurricane-card {
+  background-image: url(../public/img/copaHurricaneImg.jpg);
+}
+
+.copa-cocktail-card {
+  background-image: url(../public/img/copaCocktailImg.jpg);
+}
+
+.grey-goose-card {
+  background-image: url(../public/img/greyGooseImg.jpg);
+}
+.grey-goose-card .card-price {
+  color: rgb(0, 0, 0);
+}
+
+.diplomatico-card {
+  background-image: url(../public/img/diplomaticoImg.jpg);
+}
+.diplomatico-card .card-price {
+  color: rgb(0, 0, 0);
+}
+
+.hendricks-card {
+  background-image: url(../public/img/hendricksImg.jpg);
+}
+
+.hennessy-card {
+  background-image: url(../public/img/hennessyImg.jpg);
 }
 
 body {
@@ -130,7 +179,46 @@ main {
   flex-direction: column;
   justify-content: space-around;
 }
-main > div {
+main .utensilios {
+  margin-top: 2em;
+  display: flex;
+  flex-direction: column;
+}
+main .utensilios div .utensilios-title {
+  font-size: 1.5rem;
+  margin: 2em 1em;
+}
+main .utensilios div:nth-child(2) {
+  display: flex;
+  flex-flow: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+}
+main .cristaleria {
+  margin-top: 4em;
+  display: flex;
+  flex-direction: column;
+}
+main .cristaleria div .cristaleria-title {
+  font-size: 1.5rem;
+  margin: 2em 1em;
+}
+main .cristaleria div:nth-child(2) {
+  display: flex;
+  flex-flow: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+}
+main .bebidas {
+  margin-top: 2em;
+  display: flex;
+  flex-direction: column;
+}
+main .bebidas div .bebidas-title {
+  font-size: 1.5rem;
+  margin: 2em 1em;
+}
+main .bebidas div:nth-child(2) {
   display: flex;
   flex-flow: wrap;
   flex-direction: row;
@@ -151,11 +239,8 @@ main > div {
 
 h2 {
   text-align: center;
-  margin: 2em 1em;
-}
-
-.utensilios {
   margin-top: 2em;
+  margin-bottom: 1em;
 }
 
 .carrito {
@@ -168,6 +253,10 @@ h2 {
 }
 .carrito p {
   margin: 2em 1em;
+}
+.carrito div:nth-child(3) {
+  display: flex;
+  justify-content: center;
 }
 
 .carritoCard {
@@ -213,9 +302,28 @@ h2 {
   transition: 0.3s ease-out;
 }
 .carritoCard div {
-  width: 50% p;
-  width-margin: 0;
-  width-padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.carritoCard div p {
+  margin: 5px;
+  padding: 0;
+}
+
+.hide {
+  display: none;
+}
+
+.comprar-button {
+  width: 20%;
+  border-radius: 1rem;
+  border: none;
+  background-color: rgb(65, 61, 61);
+  color: #fff;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  margin: 15px;
 }
 
 /*# sourceMappingURL=style.css.map */

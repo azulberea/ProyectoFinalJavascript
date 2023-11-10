@@ -30,7 +30,6 @@
             font-weight: bold;
             text-align: center;
             &:nth-child(2){
-                color: rgb(153, 153, 153);
                 font-size: 2em;
             }
         }
@@ -51,21 +50,63 @@
         transition: 0.3s ease-out;
     }
 }
-.barspoonCard{  
-    background-image: url(../public/img/barspoonImg.jpg);
-}
-.cocteleraCard{
+.coctelera-card{
     background-image: url(../public/img/cocteleraImg.jpg) ;
-    .card-details{
+    .card-title{
         color: black; 
+    }
+    .card-price{
+        color: rgb(153, 153, 153);
     }    
 }
-.coladorCard{    
-    background-image: url(../public/img/coladorOrugaImg.jpg);
-    .card-details{
-        color: black;
+.barspoon-card{  
+    background-image: url(../public/img/barspoonImg.jpg);
+    .card-price{
+        color: rgb(153, 153, 153);
     }
 }
-.jiggerCard{
+.colador-card{    
+    background-image: url(../public/img/coladorOrugaImg.jpg);
+    .card-title{
+        color: black;
+    }
+    .card-price{
+        color: rgb(153, 153, 153);
+    }
+}
+.jigger-card{
     background-image: url(../public/img/jiggerImg.jpg);
+    .card-price{
+        color: rgb(153, 153, 153);
+    }
+}
+.vaso-old-fashioned-card{
+    background-image: url(../public/img/vasoOldFashionedImg.jpg);
+}
+.vaso-highball-card{
+    background-image: url(../public/img/vasoHighballimg.jpg);
+}
+.copa-hurricane-card{
+    background-image: url(../public/img/copaHurricaneImg.jpg);
+}
+.copa-cocktail-card{
+    background-image: url(../public/img/copaCocktailImg.jpg);
+}
+.grey-goose-card{
+    background-image: url(../public/img/greyGooseImg.jpg);
+    .card-price{
+        color: rgb(0, 0, 0);
+    }
+}
+.diplomatico-card{
+    background-image: url(../public/img/diplomaticoImg.jpg);
+    .card-price{
+        color: rgb(0, 0, 0);
+    }
+}
+.hendricks-card{
+    background-image: url(../public/img/hendricksImg.jpg);
+}
+.hennessy-card{
+    background-image: url(../public/img/hennessyImg.jpg);
 }

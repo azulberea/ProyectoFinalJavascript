@@ -22,148 +22,128 @@
             <a>cristaleria</a>
             <a>bebidas</a>
         </div> -->
-        <p>En el corazón de la coctelería refinada, te damos la bienvenida a un lugar donde los sabores se mezclan con la elegancia. Explora nuestras barras, bebidas selectas y recetas exclusivas de cócteles.</p>
+        <p>Desde el corazón de la coctelería refinada, te damos la bienvenida a un lugar donde los sabores se mezclan con la elegancia. Explora nuestras barras, bebidas selectas y recetas exclusivas de cócteles.</p>
     </header>
     <main>
         <h2 data-aos="fade-up">NUESTROS PRODUCTOS</h2>
         <div data-aos="fade-up" class="utensilios">
-            <div class="card cocteleraCard">
-                <div class="card-details">
-                    <p class="card-title">COCTELERA</p>
-                    <p class="card-price">$6600</p>
-                </div>
-                <button class="card-button"><box-icon name='cart-add' color='#ffffff' ></box-icon></button>
-            </div>
-            <div class="card barspoonCard">
-                <div class="card-details">
-                    <p class="card-title">BARSPOON</p>
-                    <p class="card-price">$4500</p>
-                </div>
-                <button class="card-button"><box-icon name='cart-add' color='#ffffff' ></box-icon></button>
-            </div>
-            <div class="card coladorCard">
-                <div class="card-details">
-                    <p class="card-title">COLADOR ORUGA</p>
-                    <p class="card-price">$3700</p>
-                </div>
-                <button class="card-button"><box-icon name='cart-add' color='#ffffff' ></box-icon></button>
-            </div>
-            <div class="card jiggerCard">
-                <div class="card-details">
-                    <p class="card-title">JIGGER</p>
-                    <p class="card-price">$6400</p>
-                </div>
-                <button class="card-button"><box-icon name='cart-add' color='#ffffff' ></box-icon></button>
-            </div>
-        <!-- <div class="cristaleria">
             <div>
-                <h3>Vaso Old Fashioned</h3>
-                <p>$1590</p>
-                <button class="botonCarrito" id="addVasoOldFashioned">Agregar al carrito</button>
+                <p class="utensilios-title">Utensilios</p>
             </div>
             <div>
-                <h3>Vaso Highball</h3>
-                <p>$1350</p>
-                <button class="botonCarrito" id="addVasoHighball">Agregar al carrito</button>
+                <div class="card coctelera-card">
+                    <div class="card-details">
+                        <p class="card-title">COCTELERA</p>
+                        <p class="card-price">$6600</p>
+                    </div>
+                    <button class="card-button" id="addCoctelera" data-productid="1">Agregar al carrito</button>
+                </div>
+                <div class="card barspoon-card">
+                    <div class="card-details">
+                        <p class="card-title">BARSPOON</p>
+                        <p class="card-price">$4500</p>
+                    </div>
+                    <button class="card-button" id="addBarspoon" data-productid="2">Agregar al carrito</button>
+                </div>
+                <div class="card colador-card">
+                    <div class="card-details">
+                        <p class="card-title">COLADOR ORUGA</p>
+                        <p class="card-price">$3700</p>
+                    </div>
+                    <button class="card-button" id="addColador" data-productid="3">Agregar al carrito</button>
+                </div>
+                <div class="card jigger-card">
+                    <div class="card-details">
+                        <p class="card-title">JIGGER</p>
+                        <p class="card-price">$6400</p>
+                    </div>
+                    <button class="card-button" id="addJigger" data-productid="4">Agregar al carrito</button>
+                </div>
+            </div>
+        </div>    
+        <div data-aos="fade-up" class="cristaleria">
+            <div>
+                <p class="cristaleria-title">Cristaleria</p>
             </div>
             <div>
-                <h3>Copa Hurricane</h3>
-                <p>$2450</p>
-                <button class="botonCarrito" id="addCopaHurricane">Agregar al carrito</button>
-            </div>
-            <div>
-                <h3>Copa Cocktail</h3>
-                <p>$2750</p>
-                <button class="botonCarrito" id="addCopaCocktail">Agregar al carrito</button>
+                <div class="card vaso-old-fashioned-card">
+                    <div class="card-details">
+                        <p class="card-title">OLD FASHIONED</p>
+                        <p class="card-price">$2300</p>
+                    </div>
+                    <button class="card-button" id="addVasoOldFashioned" data-productid="5">Agregar al carrito</button>
+                </div>
+                <div class="card vaso-highball-card">
+                    <div class="card-details">
+                        <p class="card-title">HIGHBALL</p>
+                        <p class="card-price">$1800</p>
+                    </div>
+                    <button class="card-button" id="addVasoHighball" data-productid="6">Agregar al carrito</button>
+                </div>
+                <div class="card copa-hurricane-card">
+                    <div class="card-details">
+                        <p class="card-title">HURRICANE</p>
+                        <p class="card-price">$3100</p>
+                    </div>
+                    <button class="card-button" id="addCopaHurricane" data-productid="7">Agregar al carrito</button>
+                </div>
+                <div class="card copa-cocktail-card">
+                    <div class="card-details">
+                        <p class="card-title">COCKTAIL</p>
+                        <p class="card-price">$3400</p>
+                    </div>
+                    <button class="card-button" id="addCopaCocktail" data-productid="8">Agregar al carrito</button>
+                </div>
             </div>
         </div>
-        <div class="bebidasAlcoholicas">
+        <div data-aos="fade-up" class="bebidas">
             <div>
-                <h3>Gin Tanqueray 750ml</h3>
-                <p>$9790</p>
-                <button class="botonCarrito" id="addGinTanqueray">Agregar al carrito</button>
+                <p class="bebidas-title">Bebidas</p>
             </div>
             <div>
-                <h3>Vodka Wyborowa 750ml</h3>
-                <p>$3900</p>
-                <button class="botonCarrito" id="addVodkaWyborowa">Agregar al carrito</button>
-            </div>
-            <div>
-                <h3>Fernet Branca 750ml</h3>
-                <p>$4040</p>
-                <button class="botonCarrito" id="addFernetBranca">Agregar al carrito</button>
-            </div>
-            <div>
-                <h3>Ron Havana Club añejo 3 años 750ml</h3>
-                <p>$5800</p>
-                <button class="botonCarrito" id="addRonHavanaClub">Agregar al carrito</button>
+                <div class="card grey-goose-card">
+                    <div class="card-details">
+                        <p class="card-title">GREY GOOSE VODKA</p>
+                        <p class="card-price">$45 000</p>
+                    </div>
+                    <button class="card-button" id="addGreyGoose" data-productid="9">Agregar al carrito</button>
+                </div>
+                <div class="card diplomatico-card">
+                    <div class="card-details">
+                        <p class="card-title">DIPLOMATICO RON</p>
+                        <p class="card-price">$42 000</p>
+                    </div>
+                    <button class="card-button" id="addDiplomatico" data-productid="10">Agregar al carrito</button>
+                </div>
+                <div class="card hendricks-card">
+                    <div class="card-details">
+                        <p class="card-title">HENDRICK'S GIN</p>
+                        <p class="card-price">$24 000</p>
+                    </div>
+                    <button class="card-button" id="addHendricks" data-productid="11">Agregar al carrito</button>
+                </div>
+                <div class="card hennessy-card">
+                    <div class="card-details">
+                        <p class="card-title">HENNESSY COGNAC</p>
+                        <p class="card-price">$34 000</p>
+                    </div>
+                    <button class="card-button" id="addHennessy" data-productid="12">Agregar al carrito</button>
+                </div>
             </div>
         </div>
-        <div class="bebidasNoAlcoholicas">
-            <div>
-                <h3>Agua Tónica 1,5l</h3>
-                <p>$750</p>
-                <button class="botonCarrito" id="addAguaTonica">Agregar al carrito</button>
-            </div>
-            <div>
-                <h3>Redbull 250ml pack 4u.</h3>
-                <p>$3100</p>
-                <button class="botonCarrito" id="addRedbullPack">Agregar al carrito</button>
-            </div>
-            <div>
-                <h3>Coca-Cola 2,25l</h3>
-                <p>$1050</p>
-                <button class="botonCarrito" id="addCocaCola">Agregar al carrito</button>
-            </div>
-            <div>
-                <h3>Schweppes pomelo</h3>
-                <p>$5800</p>
-                <button class="botonCarrito" id="addSchweppesPomelo">Agregar al carrito</button>
-            </div> 
-        </div>  -->
     </main>
-    <section class="carrito" id="carrito">
+    <section data-aos="fade-up" class="carrito" id="carrito">
         <div>
             <h2>Carrito</h2>
-            <p id="pCarritoVacio">tu carrito de compras esta vacio</p>
+            <p id="p-carrito-vacio">tu carrito de compras esta vacio</p>
         </div>
-        <div id="elementosCarrito">
-            <div class="carritoCard">
-                <img src="./public/img/barspoonImg.jpg">
-                <p>BARSPOON</p>
-                <div class="cantidad">
-                    <p>1</p>
-                </div>
-                <button class="card-button"><box-icon name='trash-alt' type='solid' ></box-icon></button>
-            </div>
-            <div class="carritoCard">
-                <img src="./public/img/cocteleraImg.jpg">
-                <p>COCTELERA</p>
-                <div class="cantidad">
-                    <p>1</p>
-                </div>
-                <button class="card-button"><box-icon name='trash-alt' type='solid' ></box-icon></button>
-            </div>
-            <div class="carritoCard">
-                <img src="./public/img/coladorOrugaImg.jpg">
-                <p>COLADOR ORUGA</p>
-                <div class="cantidad">
-                    <p>1</p>
-                </div>
-                <button class="card-button"><box-icon name='trash-alt' type='solid' ></box-icon></button>
-            </div>
-            <div class="carritoCard">
-                <img src="./public/img/jiggerImg.jpg">
-                <p>JIGGER</p>
-                <div class="cantidad">
-                    <p>1</p>
-                </div>
-                <button class="card-button"><box-icon name='trash-alt' type='solid' ></box-icon></button>
-            </div>
+        <div id="elementos-carrito">             
         </div>
+            <button class="comprar-button hide" id="comprarButton">Comprar</button>
     </section>
     <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </body>
 </html>
