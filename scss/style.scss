@@ -64,17 +64,6 @@ main{
     }
 }
 
-.containerColumn{
-    display: flex;
-    flex-direction: row;
-    margin: 10px;
-    width: 30%;
-    justify-content: space-around;
-    img{
-        width: 30%;
-        object-fit: cover;
-    }
-}
 h2{
     text-align: center;
     margin-top:  2em;

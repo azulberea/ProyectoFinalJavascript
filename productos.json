@@ -1,0 +1,15 @@
+{ "productos":[
+    {"id":1, "nombre": "Coctelera", "classname": "coctelera", "img":"./public/img/cocteleraImg.jpg", "precio": "$6600", "categoria": "utensilio"},
+    {"id":2, "nombre": "Barspoon", "classname": "barspoon", "img":"./public/img/barspoonImg.jpg", "precio": "$4500", "categoria": "utensilio"},
+    {"id":3, "nombre": "Colador", "classname": "colador", "img":"./public/img/coladorOrugaImg.jpg", "precio": "$3700", "categoria": "utensilio"},
+    {"id":4, "nombre": "Jigger", "classname": "jigger", "img":"./public/img/jiggerImg.jpg", "precio": "$6400", "categoria": "utensilio"},
+    {"id":5, "nombre": "Vaso Old Fashioned", "classname": "vaso-old-fashioned", "img":"./public/img/vasoOldFashionedImg.jpg", "precio": "$2300", "categoria": "cristaleria"},
+    {"id":6, "nombre": "Vaso Highball", "classname": "vaso-highball", "img":"./public/img/vasoHighballImg.jpg", "precio": "$1800", "categoria": "cristaleria"},
+    {"id":7, "nombre": "Copa Hurricane", "classname": "copa-hurricane", "img":"./public/img/copaHurricaneImg.jpg", "precio": "$3100", "categoria": "cristaleria"},
+    {"id":8, "nombre": "Copa Cocktail", "classname": "copa-cocktail", "img":"./public/img/copaCocktailImg.jpg", "precio": "$3400", "categoria": "cristaleria"},
+    {"id":9, "nombre": "Vodka Grey Goose", "classname": "vodka-grey-goose", "img":"./public/img/greyGooseImg.jpg", "precio": "$45 000", "categoria": "bebida"},
+    {"id":10, "nombre": "Ron Diplomatico", "classname": "ron-diplomatico", "img":"./public/img/diplomaticoImg.jpg", "precio": "$42 000", "categoria": "bebida"},
+    {"id":11, "nombre": "Gin Hendrick's", "classname": "gin-hendricks", "img":"./public/img/hendricksImg.jpg", "precio": "$24 000", "categoria": "bebida"},
+    {"id":12, "nombre": "Cognac Hennessy", "classname": "cognac-hennessy", "img":"./public/img/hennessyImg.jpg", "precio": "$34 000", "categoria": "bebida"}
+    ]
+}

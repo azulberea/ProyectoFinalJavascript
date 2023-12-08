@@ -1,53 +1,70 @@
 AOS.init();
 
-const productos = [
-    {id:1, nombre: "Coctelera", img:"./public/img/cocteleraImg.jpg", precio: "$6600"},
-    {id:2, nombre: "Barspoon", img:"./public/img/barspoonImg.jpg", precio: "$4500"},
-    {id:3, nombre: "Colador", img:"./public/img/coladorOrugaImg.jpg", precio: "$3700"},
-    {id:4, nombre: "Jigger", img:"./public/img/jiggerImg.jpg", precio: "$6400"},
-    {id:5, nombre: "Vaso Old Fashioned", img:"./public/img/vasoOldFashionedImg.jpg", precio: "$2300"},
-    {id:6, nombre: "Vaso Highball", img:"./public/img/vasoHighballImg.jpg", precio: "$1800"},
-    {id:7, nombre: "Copa Hurricane", img:"./public/img/copaHurricaneImg.jpg", precio: "$3100"},
-    {id:8, nombre: "Copa Cocktail", img:"./public/img/copaCocktailImg.jpg", precio: "$3400"},
-    {id:9, nombre: "Vodka Grey Goose", img:"./public/img/greyGooseImg.jpg", precio: "$45 000"},
-    {id:10, nombre: "Ron Diplomatico", img:"./public/img/diplomaticoImg.jpg", precio: "$42 000"},
-    {id:11, nombre: "Gin Hendrick's", img:"./public/img/hendricksImg.jpg", precio: "$24 000"},
-    {id:12, nombre: "Cognac Hennessy", img:"./public/img/hennessyImg.jpg", precio: "$34 000"},
-]
-
 let productosCarrito = []
 let seccionCarrito = document.getElementById("carrito")
 let elementosCarrito = document.getElementById("elementos-carrito")
-let botonesAgregarAlCarrito = document.querySelectorAll("[data-productid]")
 let comprarButton = document.getElementById("comprarButton")
 
-botonesAgregarAlCarrito.forEach((boton)=>boton.addEventListener("click",agregarAlCarrito))
-localStorage.setItem("carrito", productosCarrito)
-function agregarAlCarrito(event){
+fetch("productos.json")
+    .then(response => response.json())
+    .then(data => {
+        const productos = data.productos;
+        let cardsUtensilios = document.getElementById("cardsUtensilios");
+        let cardsCristaleria = document.getElementById("cardsCristaleria");
+        let cardsBebidas = document.getElementById("cardsBebidas");
+        productos.forEach((producto,index) => {
+            const productoElement = document.createElement("div");
+            productoElement.innerHTML = `<div class="card ${producto.classname}-card">
+                <div class="card-details">
+                    <p class="card-title">${producto.nombre}</p>
+                    <p class="card-price">${producto.precio}</p>
+                </div>
+                <button class="card-button" id="add${producto.classname}" data-productid="${index+1}">Agregar al carrito</button>
+            </div>`;
+            if(producto.categoria == "utensilio"){
+                cardsUtensilios.appendChild(productoElement);
+            }else if(producto.categoria == "bebida"){
+                cardsBebidas.appendChild(productoElement)
+            }else if(producto.categoria == "cristaleria"){
+                cardsCristaleria.appendChild(productoElement)
+            }
+        });
+        const botonesAgregarAlCarrito = document.querySelectorAll("[data-productid]")
+        botonesAgregarAlCarrito.forEach((boton)=>boton.addEventListener("click",agregarAlCarrito))
+    function agregarAlCarrito(event){
     let idBotonAgregar = event.target.dataset.productid 
     let productoAAgregar = productos.find((x)=>x.id == idBotonAgregar)
-    productosCarrito.push(productoAAgregar)
-    
+    let idAAgregar = productoAAgregar.id
     let divsCarrito = document.createElement("div")
-    divsCarrito.innerHTML = `<div class="carritoCard">
-    <img src=${productoAAgregar.img}>
-    <div id="product-info">
-        <p>${productoAAgregar.nombre}</p>
-        <p>${productoAAgregar.precio}</p>
-    </div>
-    <div class="cantidad">
-        <p>1</p>
-    </div>
-    <button class="card-button card-delete-button" data-productid="${productoAAgregar.id}"}>X</button>
-</div>`
-    elementosCarrito.appendChild(divsCarrito)
+    if(productosCarrito.some((x)=>x.id == idAAgregar)){
+        productoAAgregar.cantidad += 1
+        let pCantidad = document.querySelector(`#producto${productoAAgregar.id}`)
+        pCantidad.textContent = `${productoAAgregar.cantidad}`
+    }else{
+        productosCarrito.push(productoAAgregar)
+        productoAAgregar.cantidad = 1
+        console.log("ahi te lo agregue master")
+        divsCarrito.innerHTML = `
+    <div class="carritoCard">
+        <img src=${productoAAgregar.img}>
+        <div id="product-info">
+            <p>${productoAAgregar.nombre}</p>
+            <p>${productoAAgregar.precio}</p>
+        </div>
+        <div id="divCantidad">
+            <p class="pCantidad" id="producto${productoAAgregar.id}">${productoAAgregar.cantidad}</p>
+        </div>
+        <button class="card-button card-delete-button" data-productid="${productoAAgregar.id}"}>X</button>
+    </div>`
+        elementosCarrito.appendChild(divsCarrito)
+    }
     let pCarritoVacio = document.getElementById("p-carrito-vacio")
     if(pCarritoVacio){
         pCarritoVacio.classList.add("hide")
-    }
+    } //OPERADOR AVANZADO
     if(productosCarrito.length > 0){
         comprarButton.classList.remove("hide")
-    }
+    } //OPERADOR AVANZADO
     console.log(productosCarrito)
     let botonesEliminarDelCarrito = divsCarrito.querySelectorAll(".card-delete-button")
     botonesEliminarDelCarrito.forEach((boton)=>boton.addEventListener("click",eliminarfuncion))
@@ -67,8 +84,8 @@ function agregarAlCarrito(event){
     comprarButton.addEventListener("click", () =>{let timerInterval
         Swal.fire({
             title: "Compra exitosa!",
-            html: "I will close in <b></b> milliseconds.",
-            timer: 2000,
+            html: "Este mensaje se cerrará en <b></b> milisegundos.",
+            timer: 3000,
             timerProgressBar: true,
             didOpen: () => {
                 Swal.showLoading();
@@ -90,10 +107,5 @@ function agregarAlCarrito(event){
         comprarButton.classList.add("hide")
         pCarritoVacio.classList.remove("hide")
     })
-}
-
-
-
-
-
-
+    }
+})

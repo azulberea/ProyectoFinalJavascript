@@ -146,25 +146,25 @@ header > div a {
   background-image: url(../public/img/copaCocktailImg.jpg);
 }
 
-.grey-goose-card {
+.vodka-grey-goose-card {
   background-image: url(../public/img/greyGooseImg.jpg);
 }
-.grey-goose-card .card-price {
+.vodka-grey-goose-card .card-price {
   color: rgb(0, 0, 0);
 }
 
-.diplomatico-card {
+.ron-diplomatico-card {
   background-image: url(../public/img/diplomaticoImg.jpg);
 }
-.diplomatico-card .card-price {
+.ron-diplomatico-card .card-price {
   color: rgb(0, 0, 0);
 }
 
-.hendricks-card {
+.gin-hendricks-card {
   background-image: url(../public/img/hendricksImg.jpg);
 }
 
-.hennessy-card {
+.cognac-hennessy-card {
   background-image: url(../public/img/hennessyImg.jpg);
 }
 
@@ -223,18 +223,6 @@ main .bebidas div:nth-child(2) {
   flex-flow: wrap;
   flex-direction: row;
   justify-content: space-around;
-}
-
-.containerColumn {
-  display: flex;
-  flex-direction: row;
-  margin: 10px;
-  width: 30%;
-  justify-content: space-around;
-}
-.containerColumn img {
-  width: 30%;
-  object-fit: cover;
 }
 
 h2 {
